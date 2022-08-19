@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap");
+body {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Montserrat", sans-serif;
+}
+
+body::before {
+  content: "";
+  height: 1000px;
+  width: 1000px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-image: url(./images/background.svg);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  z-index: -200;
+}
+.navbar {
+  width: 90%;
+  margin: 2% auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar > img {
+  width: 8%;
+}
+.navlist {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+.navlist > li {
+  font-size: 2.4vmin;
+  font-weight: 600;
+  color: #2d39a9;
+}
+.pri-btn {
+  padding: 8px 17px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.2vmin;
+  font-weight: 600;
+  border-radius: 20px;
+  background: linear-gradient(to left, #9424f0, #fd297a);
+  color: aliceblue;
+  border: none;
+  cursor: pointer;
+}
+.hero-container {
+  width: 90%;
+  margin: 0% auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-container {
+  margin-top: 10%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-self: baseline;
+  align-self: baseline;
+
+  align-items: flex-start;
+}
+.right-container {
+}
+.right-container > img {
+  width: 920px;
+}
+.left-container > h1 {
+  font-size: 10vmin;
+  color: #3e4794;
+  margin: 10px 0px;
+}
+.left-container > h4 {
+  font-weight: 500;
+  font-size: 2.6vmin;
+  letter-spacing: 1px;
+  color:#21275e;
+}
+.btn{
+    padding: 15px 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4vmin;
+  font-weight: 600;
+  border-radius: 30px;
+  background: linear-gradient(to left, #9424f0, #fd297a);
+  color: aliceblue;
+  border: none;
+  cursor: pointer;
+}
+@media only screen and (max-width:1200px){
+  .right-container{
+    display: none;
+  }.navlist{
+    display: none;
+  }
+  .left-container{
+    width: 80%;
+  }
+}
