@@ -68,8 +68,7 @@ body::before {
 
   align-items: flex-start;
 }
-.right-container {
-}
+
 .right-container > img {
   width: 920px;
 }
@@ -95,6 +94,11 @@ body::before {
   border: none;
   cursor: pointer;
 }
+.navbar>i{
+  font-size: 3vmin;
+  color: #9424f0;
+  display: none;
+}
 @media only screen and (max-width:1200px){
   .right-container{
     display: none;
@@ -103,5 +107,8 @@ body::before {
   }
   .left-container{
     width: 80%;
+  }
+  .navbar>i{
+    display: block;
   }
 }
